@@ -1,0 +1,35 @@
+{
+  "name": "temu-ai-workbench",
+  "version": "0.1.0",
+  "description": "TEMU AI 工作台：采集 1688/TEMU/Amazon 素材，生成 TEMU 上架素材和后台填写数据，并打包可部署工作台。",
+  "author": {
+    "name": "唐卡"
+  },
+  "homepage": "https://github.com/tangka/umet",
+  "repository": "https://github.com/tangka/umet",
+  "license": "UNLICENSED",
+  "keywords": [
+    "temu",
+    "1688",
+    "ecommerce",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TEMU AI 工作台",
+    "shortDescription": "采集货源和竞品素材，生成 TEMU 上架包和部署包。",
+    "longDescription": "TEMU AI 工作台把 1688/TEMU/Amazon 采集、1688 Chrome 扩展、本地工作台、TEMU 上架素材生成和静态部署打包成 Codex 可操作流程。",
+    "developerName": "唐卡",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "用 TEMU AI 工作台检查环境和 Chrome 采集插件。",
+      "用 TEMU AI 工作台启动 1688 采集服务并告诉我 Chrome 扩展路径。",
+      "用 TEMU AI 工作台根据 1688 offer 生成 TEMU 上架包。"
+    ],
+    "brandColor": "#FB6A00"
+  }
+}

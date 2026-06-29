@@ -1,0 +1,20 @@
+{
+  "name": "umet",
+  "interface": {
+    "displayName": "UMET"
+  },
+  "plugins": [
+    {
+      "name": "temu-ai-workbench",
+      "source": {
+        "source": "local",
+        "path": "./plugins/temu-ai-workbench"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
