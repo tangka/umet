@@ -75,13 +75,7 @@ For sharing a fresh static dashboard from the source workspace, run:
 temu-workbench package
 ```
 
-The source-workspace output zip is:
-
-```text
-apps/competitor-dashboard/deploy/temu-dashboard-static.zip
-```
-
-The public plugin release does not include private dashboard data or product assets. Real dashboard preview, listing generation, and deployment packages must be built from the user's own workspace.
+The public plugin release does not include private dashboard data or product assets. Local dashboard use, listing generation, and deployment packages must be built from the user's own workspace.
 
 ## Validation
 
