@@ -1,0 +1,10 @@
+{
+  "product": "temu-ai-workbench",
+  "licenseId": "umet_temu_example",
+  "customer": "example",
+  "machineId": "optional-machine-id",
+  "features": ["capture", "dashboard", "listing", "package"],
+  "issuedAt": "2026-07-02T00:00:00.000Z",
+  "expiresAt": "2027-12-31T23:59:59+08:00",
+  "signature": "seller-generated-signature"
+}

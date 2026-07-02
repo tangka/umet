@@ -34,6 +34,9 @@ node scripts/temu-workbench.mjs <command>
 Useful commands:
 
 - `doctor`: check Node/npm, workspace, dashboard data, Chrome extension build, capture service port, and deploy package.
+- `license status`: check local machine authorization.
+- `license request`: print the machine id and license path for offline authorization.
+- `license import <license.json>`: import a seller-issued license file. `license import --code=<machine-auth-code>` is also supported.
 - `install`: run `doctor`, install dependencies if needed, build the Chrome extension, and build the dashboard.
 - `extension`: build and copy the 1688 Chrome extension, then print the unpacked extension path for Chrome.
 - `capture`: start the local capture service on `127.0.0.1:9788`.
@@ -43,6 +46,24 @@ Useful commands:
 - `smoke`: run the focused build/typecheck/smoke checks for the dashboard and capture extension.
 
 Use `--workspace=<path>` or `TEMU_WORKSPACE=<path>` when the source repo is not at `~/Code/temu`. Without the user's own source workspace, the plugin can only provide instructions and the bundled Chrome extension.
+
+## License
+
+This plugin uses offline machine authorization, matching the Jushou customer flow:
+
+```bash
+temu-workbench license request
+temu-workbench license import ./license.json
+temu-workbench license status
+```
+
+If the seller provides a machine authorization code instead of a JSON file, import it with:
+
+```bash
+temu-workbench license import --code=<machine-auth-code>
+```
+
+Without a valid license, setup commands remain available, but business commands are blocked. Before running `capture`, `dashboard`, `listing`, `package`, or `smoke`, check `temu-workbench license status`. Do not print or expose the license signature unless necessary for debugging.
 
 ## Chrome Extension
 

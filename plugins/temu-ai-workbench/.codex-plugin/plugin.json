@@ -1,6 +1,6 @@
 {
   "name": "temu-ai-workbench",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TEMU AI 工作台：采集 1688/TEMU/Amazon 素材，生成 TEMU 上架素材和后台填写数据，并打包可部署工作台。",
   "author": {
     "name": "唐卡"
@@ -26,6 +26,7 @@
       "Interactive"
     ],
     "defaultPrompt": [
+      "用 TEMU AI 工作台检查本机授权状态；如果还没有授权，输出机器码和授权导入步骤。",
       "用 TEMU AI 工作台检查环境和 Chrome 采集插件。",
       "用 TEMU AI 工作台启动 1688 采集服务并告诉我 Chrome 扩展路径。",
       "用 TEMU AI 工作台根据 1688 offer 生成 TEMU 上架包。"

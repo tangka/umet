@@ -58,6 +58,8 @@ Plugin: $PACKAGE_ROOT
 
 Next:
 1. Run: temu-workbench doctor
-2. Full dashboard/listing workflows require your own TEMU workspace.
-3. Load assets/chrome-extension/chrome-mv3 in chrome://extensions/
+2. Run: temu-workbench license request
+3. Import authorization: temu-workbench license import ./license.json
+4. Full dashboard/listing workflows require your own TEMU workspace.
+5. Load assets/chrome-extension/chrome-mv3 in chrome://extensions/
 EOF
